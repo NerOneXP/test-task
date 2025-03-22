@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    @extend %Mont-400;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    border: none;
+    border-radius: 31px;
+    display: inline-block;
+}
+
+
+
