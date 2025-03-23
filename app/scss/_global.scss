@@ -9,7 +9,10 @@ body {
     flex-direction: column;
     @extend %Mont-400;
 }
-
+body.no-scroll {
+    overflow: hidden;
+  }
+  
 main {
     flex-grow: 1;
 }
