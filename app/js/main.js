@@ -112,7 +112,7 @@ $(function () {
     $('body').addClass('no-scroll');
     $('.overlay').toggleClass('overlay--active');
 
-    let targetPopup = $(this).hasClass('Etiam-btn') ? '.product-popup' : '.form-popup';
+    let targetPopup = $(this).hasClass('Etiam-btn') ? '.form-popup' : '.product-popup';
     $(targetPopup).toggleClass(targetPopup.substring(1) + '--active');
   });
 
