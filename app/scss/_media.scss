@@ -194,7 +194,9 @@
     .top-info {
         display: none;
     }
-
+.banner{
+padding-top: 92px;
+}
     .banner__inner {
         flex-direction: column;
     }
@@ -217,6 +219,7 @@
     }
 
     .menu {
+        padding: 92px 0 50px;
         opacity: 0;
         position: absolute;
         left: 0;
@@ -320,10 +323,10 @@
         }
 
         &-list {
+            margin-top: 32px !important;
             opacity: 0;
             transition: opacity 0.3s ease 0.4s;
             flex-direction: column;
-            height: 75vh;
             justify-content: center;
 
             &__item+.menu-list__item {
@@ -791,7 +794,13 @@
         &__imgbox {
             height: 199px;
         }
+        
     }
+    .banner{
+        &-content{
+            margin-top: 40px;
+        }
+        }
 
     .form-popup {
         .popup__btn {
@@ -818,5 +827,11 @@
     .main::before {
         top: 36%;
         right: -22.5%;
+    }
+    .menu{
+        padding: 92px 0 12.92%;
+        &-list{
+            height: auto;
+        }
     }
 }
