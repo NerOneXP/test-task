@@ -15,6 +15,43 @@ body.no-scroll {
   
 main {
     flex-grow: 1;
+    position: relative;
+    min-height: max-content;
+    overflow: hidden;
+    flex-shrink: 0;
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1285.62px;
+        height: 1214.56px;
+        background-image: url('../img/deco/o-bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 0; /* Меньше, чем у первой секции */
+    }
+    &::before {
+        
+        top: 741.95px;
+        right: 51.5%;
+        
+        transform: rotate(49.32deg);
+       
+    }
+    &::after{
+        transform: rotate(-120deg);
+        bottom: -27%;
+        left: calc(81.5% - 100vh);
+    }
+
+}
+
+.info,
+.banner{
+    &__inner{
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .container {

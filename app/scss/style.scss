@@ -314,6 +314,7 @@
 
         &__title {
             font-size: 32px;
+            font-weight: 400 !important;
             display: inline-block;
             margin-bottom: 17px;
             margin-left: 20px;
@@ -426,6 +427,9 @@
             .slider-item__inner {
                 position: relative;
                 background-color: #526AEA;
+                path{
+                    fill: #526AEA;
+                }
 
                 &::before {
                     content: '';
@@ -444,13 +448,18 @@
         &:nth-child(5) {
             .slider-item__inner {
                 background-color: #F1787F;
+                path{
+                    fill: #F1787F;
+                }
             }
         }
         &:nth-child(6) {
             .slider-item__inner {
                 position: relative;
                 background-color: #EF5DE9;
-
+                path{
+                    fill: #EF5DE9;
+                }
                 &::before {
                     content: '';
                     position: absolute;
@@ -549,8 +558,7 @@
             background-color: #fff;
             width: 100%;
             padding: 24px 17px 32px;
-            border-top-left-radius: 24px;
-            border-top-right-radius: 24px;
+            border-radius: 24px;
             box-shadow: 0 -8px 42px rgba($color: #777777, $alpha: .2);
         }
 

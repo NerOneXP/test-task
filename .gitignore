@@ -6,7 +6,6 @@
 npm-debug.*
 
 package-lock.json
-dist/
 build/
 node_modules/
 app/css/*
